@@ -1,0 +1,6 @@
+<form method="POST" action="file_generator/">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" name='Word' class="btn btn-lg btn-success">Word</button>
+    <button type="submit" name='PDF' class="btn btn-lg btn-success">PDF</button>
+</form>
